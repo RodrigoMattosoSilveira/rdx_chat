@@ -1,13 +1,13 @@
-import { UPDATE_SESSION, SystemState, SystemActionTypes } from "./types";
+import { UPDATE_SESSION, SystemState, SystemActionTypes } from './types';
 
 const initialState: SystemState = {
   loggedIn: false,
-  session: "",
-  userName: ""
+  session: '',
+  userName: ''
 };
 
 export function systemReducer(
-  state = initialState,
+  state: SystemState = initialState,
   action: SystemActionTypes
 ): SystemState {
   switch (action.type) {

@@ -3,14 +3,14 @@ import {
   SEND_MESSAGE,
   DELETE_MESSAGE,
   ChatActionTypes
-} from "./types";
+} from './types';
 
 const initialState: ChatState = {
   messages: []
 };
 
 export function chatReducer(
-  state = initialState,
+  state: ChatState = initialState,
   action: ChatActionTypes
 ): ChatState {
   switch (action.type) {

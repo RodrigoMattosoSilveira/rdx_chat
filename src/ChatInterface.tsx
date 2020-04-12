@@ -1,5 +1,5 @@
-import * as React from "react";
-import { UpdateMessageParam } from "./App";
+import * as React from 'react';
+import { UpdateMessageParam } from './App';
 
 interface ChatInterfaceProps {
   message: string;
@@ -15,7 +15,7 @@ const ChatInterface: React.SFC<ChatInterfaceProps> = ({
   sendMessage
 }) => {
   function keyPress(e: React.KeyboardEvent<any>) {
-    if (e.key === "Enter") {
+    if (e.key === 'Enter') {
       send();
     }
   }
